@@ -178,16 +178,16 @@ XeonLft = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeUR
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
 let buttons = [
-{buttonId: `owner`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
+{buttonId: `Lion`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
 ]
-let buttonMessage = {
-    image: { url: 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg'},
-caption: xeonbody,
-footer: `${footer}`,
-buttons,
-headerType: 4
-}
-XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
+    let buttonMessage = {
+      image: { url: './storage/image/tambang.jpg' },
+      caption: caption,
+      footer: pushname,
+      buttons: buttons,
+      headerType: 4
+     }
+     XeonBotInc.sendMessage(from, buttonMessage, { quoted: m })
                 } else if (anu.action == 'remove') {
                 	const xeonbuffer = await getBuffer(ppuser)
                     const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
@@ -215,10 +215,10 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
 let buttons = [
-{buttonId: `owner`, buttonText: {displayText: 'බායි😇'}, type: 1}
+{buttonId: `wkwkwk`, buttonText: {displayText: 'බායි😇'}, type: 1}
 ]
     let buttonMessage = {
-        image: { url: 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg'},
+        image: { url: 'https://i.ibb.co/YWDBVhJ/neon-sign-good-bye-speech-bubble-frame-dark-background-neon-sign-good-bye-speech-bubble-frame-dark-b.jpg'},
     caption: xeonbody,
     footer: `${footer}`,
     buttons,
