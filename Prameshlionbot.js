@@ -8236,7 +8236,8 @@ break
 case 'ytad': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
-XeonBotInc.sendMessage(from, {audio:{url:args[0]}, mimetype:"audio/mp4", ptt:true, contextInfo:{externalAdReply:{
+XeonBotInc.sendMessage(from, { react: { text: `🎶`, key: m.key }})
+XeonBotInc.sendMessage(from, {audio:{url:args[0]}, mimetype:"audio/mp4", caption:"${pushname} 𝐃𝐎𝐖𝐍𝐋𝐎𝐃𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐀𝐔𝐃𝐈𝐎", ptt:true, contextInfo:{externalAdReply:{
 title:`${global.botname}`,
 body:`${global.botname}`,
 thumbnail: log0,
@@ -10925,8 +10926,13 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
           }
           }, {
           quickReplyButton: {
-                  displayText: `༺🎶𝐒𝐎𝐍𝐆🎶༻`,
+                  displayText: `༺🎶𝐃𝐎𝐂𝐔𝐌𝐄𝐍𝐓🎶༻`,
                   id: `${prefix}songe ${anu.url}`
+          }
+           },{
+          quickReplyButton: {
+                  displayText: `༺🎶𝐒𝐎𝐍𝐆🎶༻`,
+                  id: `${prefix}ytad ${anu.url}`
           }
            }]
                         }
