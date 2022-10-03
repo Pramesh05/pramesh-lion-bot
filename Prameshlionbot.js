@@ -8888,7 +8888,7 @@ sourceUrl: "https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg"
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break
-case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
+case 'nnnnnn': {
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 XeonBotInc.sendMessage(from, { react: { text: `${global.reactmoji}`, key: m.key }})
@@ -8949,12 +8949,12 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 listMessage :{
                     title: `Hi ${pushname}`,
                     description: `
-                     ╒════════════════╕        
-                     ├  ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
-                     ├         🦁🦁🦁🦁
+                     ╒════════════════╕\n        
+                     ├  ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒\n
+                     ├         🦁🦁🦁🦁\n
                      ├      
-                     ├ ${pushname} 
-                     ├ ඔබට අවශ්‍ය ලන්චනය තොරන්න
+                     ├ ${pushname} \n
+                     ├ ඔබට අවශ්‍ය ලන්චනය තොරන්න\n
                      └────────────`,
                     buttonText: "🗒️තෝරන්න🗒️",
                     footerText: `${global.botname}`,
@@ -11426,35 +11426,44 @@ XeonBotInc.sendMessage(from, { react: { text: `💚`, key: m.key }})
                 XeonBotInc.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg' }, caption: `*Hi Bro ${m.pushName}*\nDonation section is currently down🥲 , I know you are happy but me 🥲💔\n` }, { quoted: m })
             }
             break
-case 'pako': {
-    XeonBotInc.sendMessage(from, { react: { text: `💖`, key: m.key }}) 
+case 'alive': case 'panel': {
+    XeonBotInc.sendMessage(from, { react: { text: `🦁`, key: m.key }}) 
     let buttons = [
-    {buttonId: `menu`, buttonText: {displayText: 'MENU'}, type: 1},
-    {buttonId: `ping`, buttonText: {displayText: 'SPEED'}, type: 1}
+    {buttonId: `bbb`, buttonText: {displayText: '☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒'}, type: 1},
+    {buttonId: `allmenu`, buttonText: {displayText: '📚𝐀𝐋𝐋 𝐌𝐄𝐍𝐔📚'}, type: 1},
+    {buttonId: `command`, buttonText: {displayText: '📃𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔📃'}, type: 1}
     ]
     let buttonMessage = {
     image: { url: `https://i.ibb.co/CMCNByx/Picsart-22-07-03-15-45-00-698.jpg` },
-    caption: `╔═════❬ 📶𝘽𝙡𝙪𝙚 𝙇𝙞𝙤𝙣𝙚📶❭
+    caption: `┌─❖
+ 𝙃𝙄!「 ${pushname} 」
 
 
-    │「 *Hi* ✌ 」
-    
-    
-    ╠ 🛡️  ❮ *${pushname}* ❯
-    
-    
-    ➤🛡️  ⏳ ${runtime(process.uptime())}
-    
-    ➤🛡️ 𝐎𝐰𝐧𝐞𝐫⚡: ${global.ownername}
-    
-    ➤🛡️ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧  : 1.2
-    
-    ➤🛡️ 𝐁𝐨𝐭 𝐧𝐚𝐦𝐞 : 𝘽𝙡𝙪𝙚 𝙇𝙞𝙤𝙣𝙚
-    
-    ➤🛡️ 𝐎𝐰𝐞𝐧𝐞𝐫 𝐍𝐨:${global.owner} 
-      
-  *╚═══❖•ೋ° °ೋ•❖═══╝*`,
-    footer: `📶 𝘽𝙡𝙪𝙚 𝙇𝙞𝙤𝙣𝙚 📶`,
+🍫𝙞 𝙖𝙢 ☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒
+▕▕▕▕▕▕▕▕▕▕▕▕▕▕
+
+└─「 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 」
+├ 
+│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+│𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
+│𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
+│𝗢𝘄𝗻𝗲𝗿 𝗡𝗼. : ${global.owner}
+│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
+│
+│
+│       subscribe please 
+│             👇👇
+│ https://youtube.com/channel/UCOlt2_XK6tS2KJn6fTdpPew
+│    whatsapp group 
+│https://chat.whatsapp.com/FDpARRbNUKjLkfbm2xRv2M  
+
+🌎     *✧ᴄᴀʟᴇɴᴅᴀʀ:* *${thisDay}*, *${day}* 
+⏰ *✧ᴛɪᴍᴇ:* *${moment.tz('Africa/Harare').format('HH:mm:ss')}*
+└┬────────────┈ ⳹
+🍫 ඔයාට විතරයි මාව මතක් උනේ🍫
+  ◈━━━━━━━━━━━━━━━━━━━━━━━◈`,
+    footer: `☬༒𝙥𝙧𝙖𝙢𝙚𝙨𝙝༆𝙡𝙞𝙤𝙣⃕ 𝙗𝙤𝙩༒`,
     buttons: buttons,
     headerType: 4,
     }
