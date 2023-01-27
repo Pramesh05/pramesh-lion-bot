@@ -69,3 +69,6 @@
 
 [![Only](<img src="https://i.ibb.co/K54KLgF/Picsart-22-07-03-15-45-00-698.jpg)](https://heroku.com/deploy)
  
+##railway##
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FDGXeon%2FCheemsBot-MD6)
